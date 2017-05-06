@@ -42,13 +42,3 @@ class Knn
         end
     end
 end
-
-
-weights = PropertyInfoBuilder.new(1).get
-data_set = DataSetReader.new.get_data
-
-property = PropertyInfoBuilder.new
-property.crim = 0.21
-
-knn = Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: ReverseFunctionCalculator.new)
-p knn.calculate_property_value(property_info: property.get, nn: 5)
