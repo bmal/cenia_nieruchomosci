@@ -76,4 +76,4 @@ ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
 end)
 
 weights = SimulatedAnnealing.new.optimize_weights(ex)
-p sa
+p weights
