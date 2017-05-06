@@ -41,6 +41,8 @@ class Knn
         end
     end
 end
+
+
 weights = PropertyInfoBuilder.new(1).get
 data_set = DataSetReader.new.get_data
 
