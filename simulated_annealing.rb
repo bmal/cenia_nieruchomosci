@@ -16,6 +16,7 @@ class SimulatedAnnealing
 
     def optimize_weights(experimenter)
         weights = get_random_weights
+        smallest_error = 999
 
         while hot?
             new_weights = calculate_weights_with_one_attribute_changed(weights)
@@ -27,13 +28,15 @@ class SimulatedAnnealing
 
             if(error_with_old_weights > error_with_new_weights || rand < probability_of_choosing_worse_weights)
                 weights = new_weights
+                smallest_error = error_with_new_weights
             end
 
             @temperature *= @cooling_rate
-            p @temperature
+            puts "error #{smallest_error}"
+            puts "temperature #{@temperature}"
         end
 
-        weights
+        [weights, smallest_error]
     end
 
     private
@@ -62,8 +65,6 @@ class SimulatedAnnealing
         value += [-@step, @step].sample
         if value < 0
             value = 0
-        elsif value > 1
-            value = 1
         end
 
         value
@@ -75,5 +76,7 @@ ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
     Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: ReverseFunctionCalculator.new)
 end)
 
-weights = SimulatedAnnealing.new.optimize_weights(ex)
+weights, error = SimulatedAnnealing.new.optimize_weights(ex)
+
 p weights
+p error

@@ -40,7 +40,7 @@ class Experimenter
             end
         end
 
-        number_of_predictions = results.inject(0) do |sum, fold_result|
+        number_of_predictions = results.inject(0) do |sum, (_, fold_result)|
             sum + fold_result.size
         end
 
