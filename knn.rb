@@ -1,6 +1,7 @@
 require_relative 'data_set_reader'
 require_relative 'property_info_builder'
 require_relative 'euclidean_distance'
+require_relative 'weight_calculators'
 
 class Knn
     def initialize(data_set:, weights:, distance_calculator:, weight_calculator:)
@@ -49,5 +50,5 @@ data_set = DataSetReader.new.get_data
 property = PropertyInfoBuilder.new
 property.crim = 0.21
 
-knn = Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: Object.new)
+knn = Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: ReverseFunctionCalculator.new)
 p knn.calculate_property_value(property_info: property.get, nn: 5)
