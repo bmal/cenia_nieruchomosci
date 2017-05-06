@@ -18,19 +18,19 @@ class DataSetReader
             results[property_id] = {
                 property_value: medv.to_f,
                 property_informations: {
-                    crim: { value: crim.to_f, weight: @default_weight },
-                    zn: { value: zn.to_f, weight: @default_weight },
-                    indus: { value: indus.to_f, weight: @default_weight },
-                    chas: { value: chas.to_f, weight: @default_weight },
-                    nox: { value: nox.to_f, weight: @default_weight },
-                    rm: { value: rm.to_f, weight: @default_weight },
-                    age: { value: age.to_f, weight: @default_weight },
-                    dis: { value: dis.to_f, weight: @default_weight },
-                    rad: { value: rad.to_f, weight: @default_weight },
-                    tax: { value: tax.to_f, weight: @default_weight },
-                    pratio: { value: ptratio.to_f, weight: @default_weight },
-                    b: { value: b.to_f, weight: @default_weight },
-                    lstat: { value: lstat.to_f, weight: @default_weight }}}
+                    crim: crim.to_f,
+                    zn: zn.to_f,
+                    indus: indus.to_f,
+                    chas: chas.to_f,
+                    nox: nox.to_f,
+                    rm: rm.to_f,
+                    age: age.to_f,
+                    dis: dis.to_f,
+                    rad: rad.to_f,
+                    tax: tax.to_f,
+                    pratio: ptratio.to_f,
+                    b: b.to_f,
+                    lstat: lstat.to_f}}
         end
 
         results
