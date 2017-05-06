@@ -1,16 +1,15 @@
 require_relative 'cross_validation'
 
 class Experimenter
-    def initialize(data_set, knn_creator, number_of_folds: 5, nn: 5)
+    def initialize(data_set, knn_creator, number_of_folds: 5)
         @folds = CrossValidation.new(data_set, number_of_folds)
         @knn_creator = knn_creator
-        @nn = nn
     end
 
-    def calculate_error(weights)
+    def calculate_error(weights, nn = 5)
         results = {}
         @folds.each.with_index do |fold_data, fold_number|
-            fold_results = calculate_fold_results(fold_data, weights)
+            fold_results = calculate_fold_results(fold_data, weights, nn)
             results[fold_number] = fold_results
         end
 
@@ -18,7 +17,7 @@ class Experimenter
     end
 
     private
-    def calculate_fold_results(fold_data, weights)
+    def calculate_fold_results(fold_data, weights, nn)
         training_set = fold_data[:training_set]
         testing_set = fold_data[:testing_set]
 
@@ -27,7 +26,7 @@ class Experimenter
         testing_set.each do |property_id, property_attributes|
             results[property_id] = {
                 expected_result: property_attributes[:property_value],
-                result: knn.calculate_property_value(property_info: property_attributes[:property_informations], nn: @nn)}
+                result: knn.calculate_property_value(property_info: property_attributes[:property_informations], nn: nn)}
         end
 
         results

@@ -7,36 +7,54 @@ require_relative 'knn'
 
 class SimulatedAnnealing
     SEED = 13
+    MINIMUM_NEIGHBOURS = 2
 
-    def initialize(temperature: 10000.0, cooling_rate: 0.95, step: 0.1)
+    def initialize(temperature: 10000.0, cooling_rate: 0.95, step: 0.1, neighbours_step: 1)
         @temperature = temperature
         @cooling_rate = cooling_rate
         @step = step
+        @neighbours_step = neighbours_step
     end
 
     def optimize_weights(experimenter)
         weights = get_random_weights
+        n = get_random_n
+
         smallest_error = 999
+        best_weights = weights
+        best_n = MINIMUM_NEIGHBOURS
 
         while hot?
-            new_weights = calculate_weights_with_one_attribute_changed(weights)
+            if modify_weights? weights.keys
+                new_weights = calculate_weights_with_one_attribute_changed(weights)
+                new_n = n
+            else
+                new_weights = weights
+                new_n = calculate_new_n(n)
+            end
 
-            error_with_old_weights = experimenter.calculate_error(weights)
-            error_with_new_weights = experimenter.calculate_error(new_weights)
+            error_with_old_weights = experimenter.calculate_error(weights, n)
+            error_with_new_weights = experimenter.calculate_error(new_weights, new_n)
 
             probability_of_choosing_worse_weights = Math.exp((-error_with_new_weights - error_with_old_weights)/@temperature)
 
             if(error_with_old_weights > error_with_new_weights || rand < probability_of_choosing_worse_weights)
                 weights = new_weights
-                smallest_error = error_with_new_weights
+                n = new_n
+
+                if error_with_new_weights < smallest_error
+                    smallest_error = error_with_new_weights
+                    best_weights = new_weights
+                    best_n = new_n
+                end
             end
 
             @temperature *= @cooling_rate
-            puts "error #{smallest_error}"
-            puts "temperature #{@temperature}"
         end
 
-        [weights, smallest_error]
+        {weights: weights,
+         error: smallest_error,
+         n: best_n}
     end
 
     private
@@ -45,8 +63,22 @@ class SimulatedAnnealing
         PropertyInfoBuilder.new(Proc.new { random.rand(0.0..1.0) }).get
     end
 
+    def get_random_n
+        random = Random.new(SEED)
+        random.rand(MINIMUM_NEIGHBOURS..4*MINIMUM_NEIGHBOURS)
+    end
+
     def hot?
         @temperature > 0.1
+    end
+
+    def modify_weights?(attributes)
+        attributes << "n"
+        if attributes.sample != "n"
+            true
+        else
+            false
+        end
     end
 
     def calculate_weights_with_one_attribute_changed(weights)
@@ -55,6 +87,15 @@ class SimulatedAnnealing
         new_weights[attr_to_modification] = calculate_new_value_of_attribute(weights[attr_to_modification])
 
         new_weights
+    end
+
+    def calculate_new_n(n)
+        n += [-@neighbours_step, @neighbours_step].sample
+        if n < MINIMUM_NEIGHBOURS
+            n = MINIMUM_NEIGHBOURS
+        end
+
+        n 
     end
 
     def get_random_attribute(attributes)
@@ -72,11 +113,22 @@ class SimulatedAnnealing
 end
 
 data_set = DataSetReader.new.get_data
+sa = SimulatedAnnealing.new
+
 ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
     Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: ReverseFunctionCalculator.new)
 end)
+puts "ReverseFunctionCalculator"
+p sa.optimize_weights(ex)
 
-weights, error = SimulatedAnnealing.new.optimize_weights(ex)
+ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
+    Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: RandomGaussianCalculator.new)
+end)
+puts "RandomGaussianCalculator"
+p sa.optimize_weights(ex)
 
-p weights
-p error
+ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
+    Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: SubtractionFunctionCalculator.new(50))
+end)
+puts "SubtractionFunctionCalculator"
+p sa.optimize_weights(ex)
