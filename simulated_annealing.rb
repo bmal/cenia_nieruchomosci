@@ -5,6 +5,60 @@ require_relative 'weight_calculators'
 require_relative 'data_set_reader'
 require_relative 'knn'
 
+# wyniki optymalizacji (najlepszy RandomGaussianCalculator):
+# {
+# :SubtractionFunctionCalculator=>{
+#     :weights=>{
+#         :crim=>0.37770241038113406,
+#         :zn=>0,
+#         :indus=>0.524278527613027,
+#         :chas=>0.46574920140652787,
+#         :nox=>1.9726011112235924,
+#         :rm=>1.053449242690499,
+#         :age=>0,
+#         :dis=>0.6755265093394606,
+#         :rad=>0.8416133470805461,
+#         :tax=>0,
+#         :pratio=>0.10000000000000003,
+#         :b=>0,
+#         :lstat=>0.20000000000000004},
+#     :error=>4.126274718135632,
+#     :n=>3},
+# :ReverseFunctionCalculator=>{
+#     :weights=>{
+#         :crim=>0.577702410381134, 
+#         :zn=>0.5375412161600388, 
+#         :indus=>1.224278527613027, 
+#         :chas=>0.2657492014065279, 
+#         :nox=>3.4726011112235935, 
+#         :rm=>1.2534492426904993, 
+#         :age=>0, 
+#         :dis=>0.9755265093394606, 
+#         :rad=>0.7416133470805463, 
+#         :tax=>0.7220182300872047, 
+#         :pratio=>0.5350365214193966, 
+#         :b=>0, 
+#         :lstat=>0.7}, 
+#     :error=>4.5857176780241184, 
+#     :n=>3}, 
+# :RandomGaussianCalculator=>{
+#     :weights=>{
+#         :crim=>0.17770241038113407, 
+#         :zn=>0.0, 
+#         :indus=>0.9242785276130268, 
+#         :chas=>1.0657492014065277, 
+#         :nox=>0.37260111122359174, 
+#         :rm=>1.4534492426904995, 
+#         :age=>0, 
+#         :dis=>1.1755265093394607, 
+#         :rad=>0.34161334708054625, 
+#         :tax=>0, 
+#         :pratio=>2.7755575615628914e-17, 
+#         :b=>0, 
+#         :lstat=>0.6585124866850744}, 
+#     :error=>4.085963186110017, 
+#     :n=>3}}
+
 class SimulatedAnnealing
     SEED = 13
     MINIMUM_NEIGHBOURS = 3
@@ -37,7 +91,7 @@ class SimulatedAnnealing
             error_with_old_weights = experimenter.calculate_error(weights, n)
             error_with_new_weights = experimenter.calculate_error(new_weights, new_n)
 
-            probability_of_choosing_worse_weights = Math.exp(70*(-error_with_new_weights - error_with_old_weights)/current_temperature)
+            probability_of_choosing_worse_weights = Math.exp(50*(-error_with_new_weights - error_with_old_weights)/current_temperature)
             p probability_of_choosing_worse_weights
 
             if(error_with_old_weights > error_with_new_weights || rand < probability_of_choosing_worse_weights)
@@ -75,7 +129,7 @@ class SimulatedAnnealing
     end
 
     def hot?(current_temperature)
-        current_temperature > 0.005
+        current_temperature > 0.0001
     end
 
     def modify_weights?(attributes)
@@ -123,6 +177,12 @@ sa = SimulatedAnnealing.new
 results = {}
 
 ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
+    Knn.new(data_set: fold_data, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: SubtractionFunctionCalculator.new(1000))
+end)
+puts "SubtractionFunctionCalculator"
+results[:SubtractionFunctionCalculator] = sa.optimize_weights(ex)
+
+ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
     Knn.new(data_set: fold_data, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: ReverseFunctionCalculator.new)
 end)
 puts "ReverseFunctionCalculator"
@@ -133,12 +193,6 @@ ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
 end)
 puts "RandomGaussianCalculator"
 results[:RandomGaussianCalculator] = sa.optimize_weights(ex)
-
-ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
-    Knn.new(data_set: fold_data, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: SubtractionFunctionCalculator.new(50))
-end)
-puts "SubtractionFunctionCalculator"
-results[:SubtractionFunctionCalculator] = sa.optimize_weights(ex)
 
 puts "WYNIKI:"
 p results
