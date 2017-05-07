@@ -7,9 +7,9 @@ require_relative 'knn'
 
 class SimulatedAnnealing
     SEED = 13
-    MINIMUM_NEIGHBOURS = 2
+    MINIMUM_NEIGHBOURS = 3
 
-    def initialize(temperature: 10000.0, cooling_rate: 0.95, step: 0.1, neighbours_step: 1)
+    def initialize(temperature: 10000.0, cooling_rate: 0.95, step: 0.1, neighbours_step: 3)
         @temperature = temperature
         @cooling_rate = cooling_rate
         @step = step
@@ -24,7 +24,8 @@ class SimulatedAnnealing
         best_weights = weights
         best_n = MINIMUM_NEIGHBOURS
 
-        while hot?
+        current_temperature = @temperature
+        while hot? current_temperature
             if modify_weights? weights.keys
                 new_weights = calculate_weights_with_one_attribute_changed(weights)
                 new_n = n
@@ -36,7 +37,8 @@ class SimulatedAnnealing
             error_with_old_weights = experimenter.calculate_error(weights, n)
             error_with_new_weights = experimenter.calculate_error(new_weights, new_n)
 
-            probability_of_choosing_worse_weights = Math.exp((-error_with_new_weights - error_with_old_weights)/@temperature)
+            probability_of_choosing_worse_weights = Math.exp(70*(-error_with_new_weights - error_with_old_weights)/current_temperature)
+            p probability_of_choosing_worse_weights
 
             if(error_with_old_weights > error_with_new_weights || rand < probability_of_choosing_worse_weights)
                 weights = new_weights
@@ -49,10 +51,14 @@ class SimulatedAnnealing
                 end
             end
 
-            @temperature *= @cooling_rate
+            current_temperature *= @cooling_rate
+            puts "temperature: #{current_temperature}"
+            puts "new_error: #{error_with_new_weights}"
+            puts "new_n: #{new_n}"
+            puts ""
         end
 
-        {weights: weights,
+        {weights: best_weights,
          error: smallest_error,
          n: best_n}
     end
@@ -65,11 +71,11 @@ class SimulatedAnnealing
 
     def get_random_n
         random = Random.new(SEED)
-        random.rand(MINIMUM_NEIGHBOURS..4*MINIMUM_NEIGHBOURS)
+        random.rand(3*MINIMUM_NEIGHBOURS..6*MINIMUM_NEIGHBOURS)
     end
 
-    def hot?
-        @temperature > 0.1
+    def hot?(current_temperature)
+        current_temperature > 0.005
     end
 
     def modify_weights?(attributes)
@@ -83,7 +89,7 @@ class SimulatedAnnealing
 
     def calculate_weights_with_one_attribute_changed(weights)
         attr_to_modification = get_random_attribute(weights.keys)
-        new_weights = weights
+        new_weights = weights.dup
         new_weights[attr_to_modification] = calculate_new_value_of_attribute(weights[attr_to_modification])
 
         new_weights
@@ -114,21 +120,25 @@ end
 
 data_set = DataSetReader.new.get_data
 sa = SimulatedAnnealing.new
+results = {}
 
 ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
-    Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: ReverseFunctionCalculator.new)
+    Knn.new(data_set: fold_data, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: ReverseFunctionCalculator.new)
 end)
 puts "ReverseFunctionCalculator"
-p sa.optimize_weights(ex)
+results[:ReverseFunctionCalculator] = sa.optimize_weights(ex)
 
 ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
-    Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: RandomGaussianCalculator.new)
+    Knn.new(data_set: fold_data, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: RandomGaussianCalculator.new)
 end)
 puts "RandomGaussianCalculator"
-p sa.optimize_weights(ex)
+results[:RandomGaussianCalculator] = sa.optimize_weights(ex)
 
 ex = Experimenter.new(data_set, Proc.new do |fold_data, weights|
-    Knn.new(data_set: data_set, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: SubtractionFunctionCalculator.new(50))
+    Knn.new(data_set: fold_data, weights: weights, distance_calculator: EuclideanDistance.new, weight_calculator: SubtractionFunctionCalculator.new(50))
 end)
 puts "SubtractionFunctionCalculator"
-p sa.optimize_weights(ex)
+results[:SubtractionFunctionCalculator] = sa.optimize_weights(ex)
+
+puts "WYNIKI:"
+p results

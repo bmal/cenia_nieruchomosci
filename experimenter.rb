@@ -43,6 +43,6 @@ class Experimenter
             sum + fold_result.size
         end
 
-        sum_of_errors / number_of_predictions.to_f
+        Math.sqrt(sum_of_errors / number_of_predictions.to_f)
     end
 end
