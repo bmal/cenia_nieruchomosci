@@ -24,7 +24,7 @@ class SubtractionFunctionCalculator
     end
 end
 
-class RandomGaussianCalculator
+class WeightCalculator
     def initialize(sigma = 10.0)
         @sigma = sigma
     end

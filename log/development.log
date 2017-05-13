@@ -1,0 +1,1589 @@
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:41:45 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 3498ms (Views: 3489.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 15:41:55 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UdCaavnaEBlrgWkVMxiEojLVLchHIB26jYgeLDKkAs9TEQThhxNuq4rTS/sPJo4OFhdfIPwxqQNh186MuIPK7g==", "parameter_1"=>"1", "parameter_2"=>"1", "parameter_3"=>"1", "parameter_4"=>"1", "parameter_5"=>"1", "parameter_6"=>"1", "parameter_7"=>"1", "parameter_8"=>"1", "parameter_9"=>"1", "parameter_10"=>"1", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 124ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 15:41:55 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:44:04 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:48:16 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 40ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:49:53 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/pawel/Workshop/szkola/projekt/app/views/welcome/index.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+..., :class => "form-control" step: :any);@output_buffer.safe_a...
+...                               ^):
+  
+app/views/welcome/index.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting ')'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:50:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 15:50:17 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HHLJjB4G9uh78uhwmP+oqG+5Mv7hnyI9l6DnQnhnZnTLkjz+eKGPp+tbKGHv1DViLXLOnMn0tm1Xtg1k4IUA/g==", "parameter_1"=>"2.5", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 130ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 15:50:17 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:52:23 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:57:52 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:58:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:58:06 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:58:12 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 38ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:58:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 15:58:36 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 39ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:04:54 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:05:13 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:05:27 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:05:51 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:06:18 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:06:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:07:13 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:07:53 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:08:22 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:08:44 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:09:24 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:10:36 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:11:34 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhvMlXpuvpl5gojy/OgVHDCPkk0dI93ZbtVLYzgO3mXB+znnHMnH1ukrSOOLw4jWckRuLzVISYmuw6FFoOy47w==", "parameter_1"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 131ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:11:34 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:13:55 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:14:09 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8r1mGyasomi8jJrkECvLA7V0hoEEHWEICnHjxOoYKkglXZNpQAvbJywlWvVnAFbJ97964yx29VjKZwnicvpMwg==", "parameter_1"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:14:09 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:15:17 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:19:10 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:19:40 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:19:41 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TaqHmjk9zY/NgRIKZlmWc7aE1d1SItZeqOYnlZgV9e2aSnLoX5q0wF0o0hsRcgu59E8pv3pJQg5o8M2zAPeTZw==", "crim"=>"", "zn"=>"", "indus"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "rad"=>"", "tax"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:19:41 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:23:54 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:24:21 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (125.1ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `article_votes' for #<#<Class:0x007f6998dad910>:0x007f69abae9c20>):
+    19:             <div class="container">
+    20:                 <div class="row">
+    21:                     <div class="col-md-8 col-md-offset-2">
+    22:                         <h1 class="brand-heading"><%= article_votes %></h1>
+    23:                         <p class="intro-text">Nasz system na tyle oszacował wartość nieruchomości</p>
+    24:                     </div>
+    25:                 </div>
+  
+app/views/welcome/good.html.erb:22:in `_app_views_welcome_good_html_erb__3773251155459413851_70045914321620'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.5ms)
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:25:49 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (138.7ms)
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `estimated_value' for #<#<Class:0x00000004993c08>:0x0000000495fdb8>):
+    19:             <div class="container">
+    20:                 <div class="row">
+    21:                     <div class="col-md-8 col-md-offset-2">
+    22:                         <h1 class="brand-heading"> <%= estimated_value %>$</h1>
+    23:                         <p class="intro-text">Nasz system na tyle oszacował wartość nieruchomości</p>
+    24:                     </div>
+    25:                 </div>
+  
+app/views/welcome/good.html.erb:22:in `_app_views_welcome_good_html_erb__3773251155459413851_38608820'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.2ms)
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:25:52 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TaqHmjk9zY/NgRIKZlmWc7aE1d1SItZeqOYnlZgV9e2aSnLoX5q0wF0o0hsRcgu59E8pv3pJQg5o8M2zAPeTZw==", "crim"=>"", "zn"=>"", "indus"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "rad"=>"", "tax"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:25:52 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (173.9ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `estimated_value' for #<#<Class:0x00000004993c08>:0x007f6998d17988>):
+    19:             <div class="container">
+    20:                 <div class="row">
+    21:                     <div class="col-md-8 col-md-offset-2">
+    22:                         <h1 class="brand-heading"> <%= estimated_value %>$</h1>
+    23:                         <p class="intro-text">Nasz system na tyle oszacował wartość nieruchomości</p>
+    24:                     </div>
+    25:                 </div>
+  
+app/views/welcome/good.html.erb:22:in `_app_views_welcome_good_html_erb__3773251155459413851_70045913006620'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.5ms)
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:26:10 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (152.9ms)
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `estimated_value' for #<#<Class:0x007f69ab311d68>:0x007f69ab310b70>
+Did you mean?  @estimated_value):
+    19:             <div class="container">
+    20:                 <div class="row">
+    21:                     <div class="col-md-8 col-md-offset-2">
+    22:                         <h1 class="brand-heading"> <%= estimated_value %>$</h1>
+    23:                         <p class="intro-text">Nasz system na tyle oszacował wartość nieruchomości</p>
+    24:                     </div>
+    25:                 </div>
+  
+app/views/welcome/good.html.erb:22:in `_app_views_welcome_good_html_erb__3773251155459413851_70045910209300'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.3ms)
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:26:28 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:26:42 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:26:43 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:27:17 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:27:51 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:27:52 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:27:53 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:28:02 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:29:22 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:29:35 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:29:37 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:31:15 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:31:22 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:31:23 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:31:35 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:31:48 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:32:09 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:33:07 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:34:32 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:34:33 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NXbOl1+1ieyHXUWHb2DijHm7aZmiCHmhdNy7M2+pxGziljvlORLwoxf0hZYYS39GO3CV+4pj7fG0ylEV90ui5g==", "crim"=>"", "zn"=>"", "indus"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "rad"=>"", "tax"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:34:33 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:35:19 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:35:26 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:35:27 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IdOHlFzziQsvUabQd4YdRDOICKsYCcf0xaeelM9+8Kr2M3LmOlTwRL/4ZsEArYCOcUP0yTBiU6QFsXSyV5yWIA==", "crim"=>"", "zn"=>"", "indus"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "rad"=>"", "tax"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:35:27 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:35:49 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:35:50 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"49JBUFlfxEryl086IBFjZwOlXn3QUr78pHKw1UBujHQ0MrQiP/i9BWI+jytXOv6tQW6iH/g5KqxkZFrz2Izq/g==", "crim"=>"", "zn"=>"", "indus"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "rad"=>"", "tax"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:35:50 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:35:56 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:36:05 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:36:06 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/r3aqch3mdWn/jT4ZH5zKGSHRKof+RfvBi6WsC+AYSIpXS/brtDgmjdX9OkTVe7iJky4yDeSg7/GOHyWt2IHqA==", "crim"=>"", "zn"=>"", "indus"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "rad"=>"", "tax"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:36:06 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:36:36 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:36:37 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dXUabuG/sauKsKrXM5SDarV4GLjrJ3P/FJ833MgnjlCile8chxjI5BoZasZEvx6g97Pk2sNM56/Uid36UMXo2g==", "crim"=>"", "zn"=>"", "indus"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "rad"=>"", "tax"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:36:37 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized class variable @@estimated_value in ActionView::CompiledTemplates):
+    19:             <div class="container">
+    20:                 <div class="row">
+    21:                     <div class="col-md-8 col-md-offset-2">
+    22:                         <h1 class="brand-heading"> <%= @@estimated_value %>$</h1>
+    23:                         <p class="intro-text">Nasz system na tyle oszacował wartość nieruchomości</p>
+    24:                     </div>
+    25:                 </div>
+  
+app/views/welcome/good.html.erb:22:in `_app_views_welcome_good_html_erb__3773251155459413851_70045909719580'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.3ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:36:51 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:36:52 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3b33K90GPtV+6UJR14lyj1ViyPCe3CnZl/ZPJDrOV9oKXQJZu6FHmu5AgkCgou9FF6k0kra3vYlX4KUCoiwxUA==", "crim"=>"", "zn"=>"", "indus"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "rad"=>"", "tax"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 16:36:52 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 16:44:56 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 340ms (Views: 331.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 16:45:08 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lIevFHaDvTl0gjM6ZAKm6rwyoPT6gW6tgE+YkuBXa4GU88mSi8rPJSpyM9Js+wAigpTMLH2B/E0fB5WqrtDyTA==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 1037ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `-' for "1":String
+Did you mean?  -@):
+  
+app/controllers/euclidean_distance.rb:4:in `block in calculate_distance'
+app/controllers/euclidean_distance.rb:3:in `each'
+app/controllers/euclidean_distance.rb:3:in `inject'
+app/controllers/euclidean_distance.rb:3:in `calculate_distance'
+app/controllers/knn.rb:33:in `block in calculate_nearest_neighbours'
+app/controllers/knn.rb:31:in `each'
+app/controllers/knn.rb:31:in `map'
+app/controllers/knn.rb:31:in `calculate_nearest_neighbours'
+app/controllers/knn.rb:15:in `calculate_property_value'
+app/controllers/welcome_controller.rb:24:in `generate_result'
+app/controllers/welcome_controller.rb:8:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:04:09 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:04:11 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fJVExZpf66dj7wel+zX0uirklNdzn5SDCAEWcL9xFYF84SJDZxaZuz0fB03zzFJyFEL4D/SfBmOXSRtI8faMTA==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `get' for PropertyInfoBuilder:Class
+Did you mean?  gem):
+  
+app/controllers/welcome_controller.rb:8:in `block in update'
+app/controllers/welcome_controller.rb:8:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:04:57 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 52ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:04:59 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5OV9n/+7uMn1uGtUX+zxZwTnYPOv5uWeD66bL1ELqAfkkRsZAvLK1atIa7xXFVevOkEMKyjmd36Q5pYXH4wxyg==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+DEPRECATION WARNING: Method map is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from update at /home/pawel/Workshop/szkola/projekt/app/controllers/welcome_controller.rb:9)
+Completed 500 Internal Server Error in 862ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:24:in `generate_result'
+app/controllers/welcome_controller.rb:10:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.5ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:07:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:07:39 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MToH584Pb8NK3m+sWnPPFu1DpWmXPPHNpp9QKeb1OrAxTmFhM0Yd3xQub0RSimne0+XJsRA8Yy05110RqHKjfQ==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+DEPRECATION WARNING: Method map is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from update at /home/pawel/Workshop/szkola/projekt/app/controllers/welcome_controller.rb:15)
+Completed 500 Internal Server Error in 848ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:30:in `generate_result'
+app/controllers/welcome_controller.rb:16:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:08:43 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 408ms (Views: 398.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:08:44 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DfxJ6ahiXls+GLc2pmSzlea9OS4ndAq4rPo+UurSKMMNiC9vVSssR2Dot96unRVd2BtV9qB0mFgzsjNqpFWxDg==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+DEPRECATION WARNING: Method map is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from update at /home/pawel/Workshop/szkola/projekt/app/controllers/welcome_controller.rb:15)
+Completed 500 Internal Server Error in 854ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `-' for "1":String
+Did you mean?  -@):
+  
+app/controllers/euclidean_distance.rb:4:in `block in calculate_distance'
+app/controllers/euclidean_distance.rb:3:in `each'
+app/controllers/euclidean_distance.rb:3:in `inject'
+app/controllers/euclidean_distance.rb:3:in `calculate_distance'
+app/controllers/knn.rb:33:in `block in calculate_nearest_neighbours'
+app/controllers/knn.rb:31:in `each'
+app/controllers/knn.rb:31:in `map'
+app/controllers/knn.rb:31:in `calculate_nearest_neighbours'
+app/controllers/knn.rb:15:in `calculate_property_value'
+app/controllers/welcome_controller.rb:32:in `generate_result'
+app/controllers/welcome_controller.rb:16:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:09:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:09:39 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UMqa0KPiVh09azhyPHzXcUsz1LAqSBA9e/cG+efDNaRQvvxWXqskAWObOJo0hXG5dZW4aK1Igt3kvwvBqUSsaQ==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+DEPRECATION WARNING: Method map is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from update at /home/pawel/Workshop/szkola/projekt/app/controllers/welcome_controller.rb:15)
+Completed 500 Internal Server Error in 853ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:31:in `generate_result'
+app/controllers/welcome_controller.rb:17:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:10:07 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:10:09 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z40Lw3CRmiYCUCJ1hb5dAdSe0ViM3AudIAm9mDslA+Nn+W1FjdjoOlygIp2NR/vJ6ji9gAvcmX2/QbCgdaKaLg==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+DEPRECATION WARNING: Method map is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from update at /home/pawel/Workshop/szkola/projekt/app/controllers/welcome_controller.rb:15)
+Completed 500 Internal Server Error in 856ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:33:in `generate_result'
+app/controllers/welcome_controller.rb:19:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.5ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:11:43 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:11:45 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iFCQ+hLqLT0ASAFZA+W+ikX0iP38b5fcvPIH+BjgGGKIJPZ876NfIV64AbELHBhCe1LkJXtvBTwjugrAVmeBrw==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+DEPRECATION WARNING: Method map is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from update at /home/pawel/Workshop/szkola/projekt/app/controllers/welcome_controller.rb:15)
+Completed 500 Internal Server Error in 865ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:33:in `generate_result'
+app/controllers/welcome_controller.rb:19:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:12:12 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:12:13 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n6dEEY514c5ODJ3PCag9nxwu297TNT06PYxEuK40YJGf0yKXczyT0hD8nScBUZtXIoi3BlQ1r9qixEmA4LP5XA==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+DEPRECATION WARNING: Method map is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from update at /home/pawel/Workshop/szkola/projekt/app/controllers/welcome_controller.rb:15)
+Completed 500 Internal Server Error in 863ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:33:in `generate_result'
+app/controllers/welcome_controller.rb:19:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.5ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:14:50 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:14:51 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hRQ22sbh3maASAYLsH6UxqpLEouSdHjkMggLgnKgzimFYFBcO6iset64BuO4hzIOlO1+UxV06gStQAa6PCdX5A==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+DEPRECATION WARNING: Method map is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.0.1/classes/ActionController/Parameters.html (called from update at /home/pawel/Workshop/szkola/projekt/app/controllers/welcome_controller.rb:14)
+Completed 500 Internal Server Error in 850ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:32:in `generate_result'
+app/controllers/welcome_controller.rb:18:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:15:14 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:15:15 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+6CGiMoz8VDESrolk39oyBKmH0BG8gq8+w9JReGz0m/71OAON3qDTJq6us2bhs4ALABzmMHymFxkR0R9rzRLog==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 841ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:32:in `generate_result'
+app/controllers/welcome_controller.rb:18:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.3ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:17:16 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:17:18 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E/UiPb+m0wRBc5u/e/dL+pG7glmTrM5Jo81UsI/n4cATgUS7Qu+hGB+Dm1dzDu0yrx3ugRSsXKk8hVmIwWB4DQ==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 840ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:32:in `generate_result'
+app/controllers/welcome_controller.rb:18:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:18:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:18:44 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:18:45 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3g69xaRGFpl1KopGLv4ODYzKefPQjD+JwtBt+ovl+8feettDWQ9khSvaiq4mB6jFsmwVK1eMrWldmGDCxWJiCg==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 850ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:33:in `generate_result'
+app/controllers/welcome_controller.rb:19:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.4ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:19:41 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 58ms (Views: 56.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:19:42 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IvP6dnSF60V9FFtMjetftypjjkAZ9WvqYL1w6Bx9/b4ih5zwicyZWSPkW6SFEvl/FMXimJ71+Qr/9X3QUvpkcw==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `to_unsafe_h' for []:Array):
+  
+app/controllers/welcome_controller.rb:17:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.3ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:20:03 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:20:04 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rOTkHz0zbh7kegmkp8uAfIZIZ8WpypZLWZjf75pPnoaskIKZwHocArqKCUyvMia0uO4LHS7KBKvG0NLX1MgHSw==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 895ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:33:in `generate_result'
+app/controllers/welcome_controller.rb:19:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (28.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:22:18 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 54ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:22:20 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xHQ9uQqxlsZRM3xbKGNlwtGSh2Wyy1ILk70nBJhjsT7EAFs/9/jk2g/DfLMgmsMK7zTrvTXLwOsM9So81uQo8w==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `params' for #<ActiveSupport::HashWithIndifferentAccess:0x0000000202f538>):
+  
+app/controllers/welcome_controller.rb:13:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.9ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:22:38 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:22:39 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1LGeZcBCHDIEBRUAMLIrJYWXGEmRctarUP6zjlc888DUxfjjPQtuLlr1Feg4S43tuzF0kRZyREvPtr62GbtqDQ==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 863ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:33:in `generate_result'
+app/controllers/welcome_controller.rb:19:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:22:58 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:22:59 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o5IBKe0fQJoz7i96nm/2eLQy4Xi3iWQ9rnKkwhMPIxij5mevEFYyhm0eL5KWllCwipSNoDCJ9t0xOqn6XYi61Q==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `to_unsafe_h' for #<Array:0x007f0572258e50>):
+  
+app/controllers/welcome_controller.rb:17:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.0ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:24:08 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:24:10 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qIl9mOqX6g7YisLXwrrOB4J6guTOSMGTRBFUfSsgnvGo/RseF96YEoZ6wj/KQ2jPvNzuPElIU3PbWVlFZacHPA==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 847ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:33:in `generate_result'
+app/controllers/welcome_controller.rb:19:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.8ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:28:00 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 382ms (Views: 371.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:28:03 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gTchBw1/hIjZB9zKkqK6TuSGs0xPkHpmed7LWtcHhDiBQ0eB8Db2lIf33CKaWxyG2iDflMiQ6IbmlsZimYAd9Q==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 852ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/euclidean_distance.rb:4:in `[]'
+app/controllers/euclidean_distance.rb:4:in `block in calculate_distance'
+app/controllers/euclidean_distance.rb:3:in `each'
+app/controllers/euclidean_distance.rb:3:in `inject'
+app/controllers/euclidean_distance.rb:3:in `calculate_distance'
+app/controllers/knn.rb:33:in `block in calculate_nearest_neighbours'
+app/controllers/knn.rb:31:in `each'
+app/controllers/knn.rb:31:in `map'
+app/controllers/knn.rb:31:in `calculate_nearest_neighbours'
+app/controllers/knn.rb:15:in `calculate_property_value'
+app/controllers/welcome_controller.rb:41:in `generate_result'
+app/controllers/welcome_controller.rb:25:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:29:43 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:29:45 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4FaRgnqoBpBXtpY0xjATDI1SWvPdt5uAw5RFacouGG3gIvcEh+F0jAlGltzOybXEs/Q2K1q3CWBc3EhRhKmBoA==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 871ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/euclidean_distance.rb:4:in `[]'
+app/controllers/euclidean_distance.rb:4:in `block in calculate_distance'
+app/controllers/euclidean_distance.rb:3:in `each'
+app/controllers/euclidean_distance.rb:3:in `inject'
+app/controllers/euclidean_distance.rb:3:in `calculate_distance'
+app/controllers/knn.rb:33:in `block in calculate_nearest_neighbours'
+app/controllers/knn.rb:31:in `each'
+app/controllers/knn.rb:31:in `map'
+app/controllers/knn.rb:31:in `calculate_nearest_neighbours'
+app/controllers/knn.rb:15:in `calculate_property_value'
+app/controllers/welcome_controller.rb:43:in `generate_result'
+app/controllers/welcome_controller.rb:27:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.1ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.2ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:30:34 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:30:35 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Oq01TjTEQSS0WQ6wr4MKrotWSejtaUsDR5ugB7JecgY62VPIyY0zOOqpDlineqxmtfAlMGpp2ePY060//Nnryw==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 861ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `-' for nil:NilClass):
+  
+app/controllers/euclidean_distance.rb:4:in `block in calculate_distance'
+app/controllers/euclidean_distance.rb:3:in `each'
+app/controllers/euclidean_distance.rb:3:in `inject'
+app/controllers/euclidean_distance.rb:3:in `calculate_distance'
+app/controllers/knn.rb:33:in `block in calculate_nearest_neighbours'
+app/controllers/knn.rb:31:in `each'
+app/controllers/knn.rb:31:in `map'
+app/controllers/knn.rb:31:in `calculate_nearest_neighbours'
+app/controllers/knn.rb:15:in `calculate_property_value'
+app/controllers/welcome_controller.rb:43:in `generate_result'
+app/controllers/welcome_controller.rb:27:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:31:44 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:31:45 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KqfH9pLE614BRv/kvuUo+rHkLzfNjEGHUQl92y8SFOwq06Fwb42ZQl+2/wy2HI4yj0JD70qM02fOQXDjYZWNIQ==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 854ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 17:31:46 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:32:09 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:32:11 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NW0MDZ45S2eisEz5s7HlugQMHynCCV6HEyAv6RtTJls1GWqLY3A5e/xATBG7SENyOqpz8UUJzGeMaCLRVdS/lg==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 880ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `-' for nil:NilClass):
+  
+app/controllers/euclidean_distance.rb:4:in `block in calculate_distance'
+app/controllers/euclidean_distance.rb:3:in `each'
+app/controllers/euclidean_distance.rb:3:in `inject'
+app/controllers/euclidean_distance.rb:3:in `calculate_distance'
+app/controllers/knn.rb:33:in `block in calculate_nearest_neighbours'
+app/controllers/knn.rb:31:in `each'
+app/controllers/knn.rb:31:in `map'
+app/controllers/knn.rb:31:in `calculate_nearest_neighbours'
+app/controllers/knn.rb:15:in `calculate_property_value'
+app/controllers/welcome_controller.rb:44:in `generate_result'
+app/controllers/welcome_controller.rb:27:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:33:56 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:33:57 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GJYyEUy7VR5FsKkjXvtiQ4TSubpY0GDaBecnXOnOkLMY4lSXsfInAhtAqctWAsSLunTVYt/Q8jqarypkp0kJfg==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "rad"=>"1", "tax"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 897ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `-' for nil:NilClass):
+  
+app/controllers/euclidean_distance.rb:9:in `block in calculate_distance'
+app/controllers/euclidean_distance.rb:8:in `each'
+app/controllers/euclidean_distance.rb:8:in `inject'
+app/controllers/euclidean_distance.rb:8:in `calculate_distance'
+app/controllers/knn.rb:33:in `block in calculate_nearest_neighbours'
+app/controllers/knn.rb:31:in `each'
+app/controllers/knn.rb:31:in `map'
+app/controllers/knn.rb:31:in `calculate_nearest_neighbours'
+app/controllers/knn.rb:15:in `calculate_property_value'
+app/controllers/welcome_controller.rb:41:in `generate_result'
+app/controllers/welcome_controller.rb:25:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:40:28 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:40:38 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ffFAFxGUvX+MfqyUiBss36T8nTd3SEG2g0h86vascMl9hSaR7N3PY9KOrHyA4ooXmlrx7/BI01YcAHHSuCvpBA==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "chas"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "tax"=>"1", "rad"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 933ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 17:40:39 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:42:11 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:42:12 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GfzHozfWKrluvLMvxJDlEpOKRoLPIrNPgTgoC/ciQ4MZiKElyp9YpTBMs8fMaUParSwqWkgiIa8ecCUzuaXaTg==", "crim"=>"1", "zn"=>"1", "indus"=>"1", "chas"=>"1", "nox"=>"1", "rm"=>"1", "age"=>"1", "dis"=>"1", "tax"=>"1", "rad"=>"1", "pratio"=>"1", "b"=>"1", "lstat"=>"1", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 871ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::RandomGaussianCalculator):
+  
+app/controllers/welcome_controller.rb:29:in `generate_result'
+app/controllers/welcome_controller.rb:15:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:43:17 +0200
+  
+LoadError (cannot load such file -- /home/pawel/Workshop/szkola/projekt/app/controllers/weight_calculator):
+  
+app/controllers/welcome_controller.rb:5:in `require_relative'
+app/controllers/welcome_controller.rb:5:in `<top (required)>'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:43:42 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:43:43 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wT6cEun0U3CJhU5Gm/dK3yWlZ5JgrpBIyEA3ul5nTE7BSvqUFL0hbNd1Tq6TDuwXGwMLSueuAqhXCDqCEODVgw==", "crim"=>"", "zn"=>"", "indus"=>"", "chas"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "tax"=>"", "rad"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 847ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 17:43:44 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:44:00 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:44:02 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JFGCFppmpeefh2qdk27cS0Q67j6UGsTEFATrIKblcickJeSQZy/X+8F3anWbl3qDepyC5hMaViSLTOYY6GLr6g==", "crim"=>"", "zn"=>"", "indus"=>"", "chas"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "tax"=>"", "rad"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Completed 500 Internal Server Error in 865ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant WelcomeController::WeightCalculators):
+  
+app/controllers/welcome_controller.rb:29:in `generate_result'
+app/controllers/welcome_controller.rb:15:in `update'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:44:16 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:44:17 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/PslQOBG5MyHD4WcVs9RkHBYYqE939y8y+OxETy8uDn8j0PGHQ+W0Nn/hXReNvdYTv4OebrfTlxUq7wpcjsh9A==", "crim"=>"", "zn"=>"", "indus"=>"", "chas"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "tax"=>"", "rad"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 961ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 17:44:18 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:44:58 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/PslQOBG5MyHD4WcVs9RkHBYYqE939y8y+OxETy8uDn8j0PGHQ+W0Nn/hXReNvdYTv4OebrfTlxUq7wpcjsh9A==", "crim"=>"21", "zn"=>"21", "indus"=>"2.3", "chas"=>"1", "nox"=>"2.1", "rm"=>"0.9", "age"=>"25.4", "dis"=>"2", "tax"=>"3", "rad"=>"4", "pratio"=>"5", "b"=>"6", "lstat"=>"2", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 896ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 17:44:59 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:46:42 +0200
+  
+LoadError (cannot load such file -- /home/pawel/Workshop/szkola/cenia_nieruchomosci/app/controllers/weight_calculators):
+  
+app/controllers/knn.rb:4:in `require_relative'
+app/controllers/knn.rb:4:in `<top (required)>'
+app/controllers/welcome_controller.rb:1:in `require_relative'
+app/controllers/welcome_controller.rb:1:in `<top (required)>'
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.3ms)
+  Rendered /var/lib/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.7ms)
+Started GET "/" for 127.0.0.1 at 2017-05-13 17:47:49 +0200
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 269ms (Views: 266.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/welcome/update/" for 127.0.0.1 at 2017-05-13 17:47:52 +0200
+Processing by WelcomeController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZTAbH064tcjvoPlieNQlOQr0xIOjcay5HM5Y4xuGDROhm0/HKZs3Nbfljh8nLcoAgDJqvj5uVsQAQELXVp2gA==", "crim"=>"", "zn"=>"", "indus"=>"", "chas"=>"", "nox"=>"", "rm"=>"", "age"=>"", "dis"=>"", "tax"=>"", "rad"=>"", "pratio"=>"", "b"=>"", "lstat"=>"", "commit"=>"Wyslij"}
+Redirected to http://localhost:3000/good
+Completed 302 Found in 863ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/good" for 127.0.0.1 at 2017-05-13 17:47:53 +0200
+Processing by WelcomeController#good as HTML
+  Rendering welcome/good.html.erb within layouts/application
+  Rendered welcome/good.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 67ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+

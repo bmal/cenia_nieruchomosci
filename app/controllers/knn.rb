@@ -1,7 +1,7 @@
 require_relative 'data_set_reader'
 require_relative 'property_info_builder'
 require_relative 'euclidean_distance'
-require_relative 'weight_calculators'
+require_relative 'weight_calculator'
 
 class Knn
     def initialize(data_set:, weights:, distance_calculator:, weight_calculator:)

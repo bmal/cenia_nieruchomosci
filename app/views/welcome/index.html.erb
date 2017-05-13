@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row main">
+        <div class="panel-heading">
+                <div class="panel-title text-center">
+                  <h1 class="title">Projekt - Uczenie Maszyn</h1>
+                </div>
+              </div> 
+        <div class="main-login main-center">
+        <div class="form-horizontal">
+        <%= form_tag("welcome/update/", :method =>'post') do %>
+            <div class="form-group">
+            <label for="crim" class="cols-sm-2 control-label">Wskaźnik przestępczości</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "crim", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="zn" class="cols-sm-2 control-label">Odsetek gruntów pod zabudowę mieszkalną</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "zn", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+            <label for="indus" class="cols-sm-2 control-label">Odsetek hektarów niehandlowych</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "indus", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="chas" class="cols-sm-2 control-label">Zmienna binarna dot. rzeki Charles</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "chas", "", :placeholder =>  "0 lub 1", :class => "form-control", in: 0..1%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="nox" class="cols-sm-2 control-label">Stężenie tlenku azotu</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "nox", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="rm" class="cols-sm-2 control-label">Średnia liczba pokoi na mieszkanie</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "rm", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="age" class="cols-sm-2 control-label">Procent budynków sprzed 1940 roku</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "age", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="dis" class="cols-sm-2 control-label">Średnia odległość do centrów hadlowych</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "dis", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="tax" class="cols-sm-2 control-label">Pełnowartościową stawkę podatku od nieruchomości</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "tax", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="rad" class="cols-sm-2 control-label">Dostępność autostrad</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "rad", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="pratio" class="cols-sm-2 control-label">Procent uczniów do nauczycieli</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "pratio", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="b" class="cols-sm-2 control-label">Procent Murzynów do ludzi białych</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "b", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="lstat" class="cols-sm-2 control-label">Procent klasy niższej</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok" aria-hidden="true"></i></span>
+                    <%= number_field_tag "lstat", "", :placeholder =>  "Liczba zmiennoprzecinkowa", :class => "form-control", step: :any%>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group ">
+              <%= submit_tag "Wyslij", :class => "btn btn-primary btn-lg btn-block login-button ", data: { disable_with: "Przetwarzanie..." } %>
+            </div>
+
+        <% end %>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
